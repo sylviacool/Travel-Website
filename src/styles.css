@@ -8,9 +8,19 @@ body {
   margin: 0 auto;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+
+section {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../images/lisbon.png");
+    url("../images/Berlin.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -55,7 +65,49 @@ header a {
   background: white;
 }
 
-@media (max-width: 90rem) {
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("../images/berlin-footer.webp");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10rem 0;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  opacity: 0.7;
+  margin-right: 2rem;
+  line-height: 2.4rem;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+
+@media (max-width: 96rem) {
   header {
     padding: 6rem 0;
   }
